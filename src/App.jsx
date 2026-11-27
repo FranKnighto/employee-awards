@@ -2,7 +2,15 @@ import { useState } from 'react'
 
 function EmployeeAward({ name, years }) {
   return (
-    <span class="border">
+    <div
+      style={{
+        border: '2px solid #ccc',
+        padding: '10px',
+        margin: '10px',
+        borderRadius: '6px',
+        width: '300px',
+      }}>
+
       <h2>{name}</h2>
       <p>
         Years at Company: {years}
@@ -10,7 +18,7 @@ function EmployeeAward({ name, years }) {
       <p>
         {years >= 5 ? "Eligible for Long Service Award 🎉" : "Not Eligible"}
       </p>
-    </span>
+    </div>
   )
 }
 
